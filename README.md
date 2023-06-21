@@ -1,4 +1,13 @@
 # data-migration-sync
+## Backup & Disaster recovery
+- Recovery time objective (RTO):RTO is the maximum acceptable delay between the interruption of service and restoration of service. This determines an acceptable time window when service is unavailable.
+- Recovery Point Objective (RPO):RPO is the maximum acceptable amount of time since the last data recovery point. This determines what is considered an acceptable loss of data between the last recovery point and the interruption of service.
+  
+|Feature                      |RTO|RPO|Cost|Scope|
+|---                          | --- | --- | --- |--- |
+|auto backups                 |good|better|low|single region|
+|manual snapshots             |better|good|medium|cross region|
+|read replicas                |best|best|high|cross region|
 
 ## NiFi
 ### QueryDatabaseTable
