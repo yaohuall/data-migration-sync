@@ -64,6 +64,6 @@ services:
             - ./nifi/jdbc:/opt/nifi/nifi-current/jdbc
             - ./nifi/credentials:/opt/nifi/nifi-current/credentials
             # uncomment the next line after copying the /conf directory from the container to your local directory to persist NiFi flows
-            # - ./nifi/conf:/opt/nifi/nifi-current/conf
+            - ./nifi/conf:/opt/nifi/nifi-current/conf
         networks:
             - nifi-net
